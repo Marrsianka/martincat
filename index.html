@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Cat Martin</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="#about">About me</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contacts">Contacts</a>
+                <div class="hamburger">
+                    <div class="hamburger-icon">
+                        <img src="menu.png" onclick="openHamburger()">
+                    </div>
+                    <div class="hamburger-menu">
+                        <div class="hamburger-icon">
+                            <img src="menu-close.png" onclick="closeHamburger()">
+                        </div>
+                        <a href="#about">About me</a>
+                        <a href="#portfolio">Portfolio</a>
+                        <a href="#contacts">Contacts</a>
+                    </div>
+                </div>
+            </nav>
+            <h1>Martin,<br>just cat</h1>
+        </header>
+        <section id="about">
+            <div id="about-info">
+                <h2>About me</h2>
+                <p>I'm Martin. I'm cat, just Great Cat.</p>
+                <p><b>Features:</b> big, black, dangerous.</p>
+            </div>
+            <div id="about-img">
+                <img src="main-foto.jpg" alt="Martin" title="Martin">
+            </div>
+        </section>
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div id="portfolio-list">
+                <div class="portfolio-list-item">
+                    <div class="portfolio-list-item-img">
+                        <img src="portfolio-1.jpg" alt="Portfolio-Sit" title="Portfolio-Sit">
+                    </div>
+                    <div class="portfolio-list-item-info">
+                        I can sit.
+                    </div>
+                    <div class="portfolio-list-item-button">
+                        <button class="open-window" onclick="openWindow()">Specialty</button>
+                    </div>
+                </div>
+                <div class="portfolio-list-item">
+                    <div class="portfolio-list-item-img">
+                        <img src="portfolio-2.jpg" alt="Portfolio-Lie" title="Portfolio-Lie">
+                    </div>
+                    <div class="portfolio-list-item-info">
+                        I can lie.
+                    </div>
+                    <div class="portfolio-list-item-button">
+                        <button class="open-window" onclick="openWindow2()">Specialty</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contacts">
+            <h2>Contacts</h2>
+                <div id="contacts-info">I will contact you myself.</div>
+                <div id="contacts-vk"><a target="_blank" href="https://vk.com/martin.luther.king"><img src="vk.png" alt="Contact Martin" title="Contact Martin"></a></div>
+        </section>
+        <footer>
+            <div id="footer-copyright">
+                &#169; Made in CatDevelopment
+            </div>
+            <div id="footer-year">
+                2021
+            </div>
+        </footer>
+        <div class="window">
+            <div class="window-content">
+                <div class="window-content-name">I can sit</div>
+                <div class="window-content-text">Pellentesque metus urna, molestie id lobortis nec, venenatis eget est.
+                    Vivamus consectetur neque sapien. Nullam erat risus, varius at rutrum at,
+                    dapibus ac lacus. Sed quis arcu eros, ac aliquam purus. Vivamus sed diam nibh.</div>
+                <div class="window-content-button">
+                    <button class="close-window" onclick="closeWindow()">Close</button>
+                </div>
+            </div>
+        </div>
+        <div class="window2">
+            <div class="window-content">
+                <div class="window-content-name">I can lie</div>
+                <div class="window-content-text">Pellentesque metus urna, molestie id lobortis nec, venenatis eget est.
+                    Vivamus consectetur neque sapien. Nullam erat risus, varius at rutrum at,
+                    dapibus ac lacus. Sed quis arcu eros, ac aliquam purus. Vivamus sed diam nibh.</div>
+                <div class="window-content-button">
+                    <button class="close-window" onclick="closeWindow()">Close</button>
+                </div>
+            </div>
+        </div>
+    <script src="script.js"></script>
+    </body>
+</html>
